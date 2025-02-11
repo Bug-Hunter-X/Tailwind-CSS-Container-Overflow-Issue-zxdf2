@@ -1,0 +1,9 @@
+The following code uses Tailwind's `container` utility class, but the content overflows its container:
+
+```html
+<div class="container mx-auto">
+  <p>This is some text that is much longer than the container width.</p>
+</div>
+```
+
+This happens because the `container` class sets the maximum width, but doesn't restrict the content inside from overflowing.
