@@ -1,0 +1,9 @@
+To solve this, we need to make sure the content within the container wraps properly:
+
+```html
+<div class="container mx-auto">
+  <p class="break-words">This is some text that is much longer than the container width, but now it breaks correctly.</p>
+</div>
+```
+
+Adding the `break-words` class allows the text to wrap onto multiple lines, preventing overflow.  Alternatively, you could use `whitespace-pre-line` or `whitespace-pre-wrap`, depending on your exact whitespace requirements.
